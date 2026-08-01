@@ -1180,3 +1180,57 @@ section{
 }
 
 }
+
+.zoom{
+
+    transform:scale(1.15)!important;
+
+    transition:.35s;
+
+}
+
+button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple{
+
+    position:absolute;
+
+    width:12px;
+
+    height:12px;
+
+    background:rgba(255,255,255,.6);
+
+    border-radius:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation:ripple .6s linear;
+
+}
+
+@keyframes ripple{
+
+    from{
+
+        width:0;
+        height:0;
+        opacity:1;
+
+    }
+
+    to{
+
+        width:320px;
+        height:320px;
+        opacity:0;
+
+    }
+
+}
